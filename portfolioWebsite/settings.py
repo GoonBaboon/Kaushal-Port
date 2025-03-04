@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-9gv&4s4tf22e+%0p30kmjxf7ubrj28@e^_7hj4y%tagi6$0z)a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["kaushal-port.onrender.com","127.0.0.1"]
 
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', '6mid8+$_km1i!!dkw)t$c3@ieb!955j*#4r=aloz7fuv9!%u)9')
 
