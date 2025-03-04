@@ -1,0 +1,20 @@
+.m-logo{
+    height: 150px;
+    width: 200px;
+}
+.m-logo2{
+    height: 100px;
+    width: 200px;
+}
+.width-expand{
+    width: 70px;
+}
+.kunal:hover{
+    color: rgb(8, 149, 8);
+}
+.custom-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgb(0 255 0 / 61%) 0px 0px 15px 5px;
+}
+.kunal-text{
+    color: black;
+}

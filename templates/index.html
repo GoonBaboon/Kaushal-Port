@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <!-- Site Title -->
+  <title>Kaushal - Personal Portfolio Tailwind CSS Template</title>
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="{% static 'favicon.png' %}">
+  <link rel="shortcut icon" type="image/png" href="{% static 'kunal/img/favicon.png' %}">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="{% static 'kunal/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/font-awesome-pro.min.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/swiper.min.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/meanmenu.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/backToTop.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'kunal/css/kunal.css' %}">
+</head>
+
+<body>
+    {% include 'snippet/all.html' %}
+  <main id="primary" class="site-main">
+    <!-- start: Hero Section -->
+    <section class="tj-hero-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-hero-top-wrapper text-center">
+              {% comment %} <div class="logo">
+                <img class="width-expand" src="{% static 'me.png' %}" alt="Kaushal Logo">
+              </div> {% endcomment %}
+              <div class="horo-title">
+                <h1 class="title mt-4 pb-4">
+                  Kaushal - 3D Artist Portfolio
+                </h1>
+              </div>
+              <div class="desc">
+                <p>
+                  Explore my world of 3D art, immersive visuals, and creative storytelling.
+                </p>
+              </div>
+              <div class="horo-btn">
+                <a class="tj-theme-btn icon_main" href="#works">View Work
+                  <span class="icon_box">
+                    <i class="icon_first fa-regular fa-arrow-right"></i>
+                    <i class="icon_second fa-regular fa-arrow-right"></i>
+                  </span>
+                </a>
+                <a class="tj-theme-border icon_main" href="#cta">Contact
+                  <span class="icon_box">
+                    <i class="icon_first fa-regular fa-arrow-right"></i>
+                    <i class="icon_second fa-regular fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="tj-hero-shape">
+                <img class="tj-hero-shape-1" src="{% static 'kunal/img/icon/hero-shape1.svg' %}" alt="">
+                <img class="tj-hero-shape-2" src="{% static 'kunal/img/icon/hero-shape2.svg' %}" alt="">
+                <img class="tj-hero-shape-3" src="{% static 'kunal/img/icon/hero-shape3.svg' %}" alt="">
+                <img class="tj-hero-shape-4" src="{% static 'kunal/img/icon/hero-shape4.svg' %}" alt="">
+              </div>
+            </div>
+            <div class="tj-hero-buttom-wrapper">
+              <div class="hero-bg-images d-none d-lg-inline-flex">
+                <img src="{% static 'Unknown.png' %}" style="width: 1000px;" alt="3D Artwork">
+              </div>
+              <div class="hero-mobile-images d-lg-none">
+                <img src="{% static 'kunal/img/hero/hero-mobile-images.png' %}" alt="3D Artwork">
+              </div>
+              <div class="tj-hero-award-shape">
+                <div class="tj-hero-award-wrap">
+                  <div class="icon">
+                    <span><img src="{% static 'kunal/img/icon/hero-award.svg' %}" alt=""></span>
+                  </div>
+                  <h4 class="title">
+                    Precision & <br>
+                    Creativity.
+                  </h4>
+                  <div class="line"></div>
+                  <span class="tj-hero-award-ponter"><img src="{% static 'kunal/img/icon/hero-pointer.svg' %}" alt=""></span>
+                </div>
+              </div>
+              <div class="tj-hero-icon">
+                <span><img src="{% static 'kunal/img/icon/hero-icon.svg' %}" alt=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end: Hero Section -->
+
+    <!-- start: Service Section -->
+    <section class="tj-service-area"id='expertise' >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-section-wrapper text-center wow fadeInUp" data-wow-delay=".3s">
+              <h6 class="tj-section-subtitle">Skills & Expertise</h6>
+              <h2 class="tj-section-title">What I Do</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="tj-service-wrapper wow fadeInUp custom-shadow" data-wow-delay=".4s">
+              <div class="tj-service-icon">
+                <span><img src="{% static 'kunal/img/icon/service-icon1.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">3D Modeling</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Creating detailed organic & hard-surface models for games, animation, and VR.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tj-service-wrapper wow fadeInUp custom-shadow" data-wow-delay=".5s">
+              <div class="tj-service-icon">
+                <span><img src="{% static 'kunal/img/icon/service-icon2.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">CGI & Animation</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Crafting realistic and stylized textures using Substance Painter, Photoshop & Mari.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tj-service-wrapper wow fadeInUp custom-shadow" data-wow-delay=".6s">
+              <div class="tj-service-icon">
+                <span><img src="{% static 'kunal/img/icon/service-icon3.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">Lighting & Rendering</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Enhancing visuals with dynamic lighting in Arnold, V-Ray & Unreal Engine.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end: Service Section -->
+
+    <!-- start: Maquee Area -->
+    <section class="tj-marquee-area">
+      <div class="marquee-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="tj-marquee-slider">
+                <div class="tj-marquee-active swiper-container">
+                  <div class="swiper-wrapper tj-project-slider-transition">
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Modeling</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Texturing</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Lighting</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Rendering</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Rigging</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Animation</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Game Art</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Optimization</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Concept Art</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Visualization</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Blender</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Maya</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">ZBrush</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Substance</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Photoshop</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Unreal</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Unity</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+    <!-- end: Maquee Area -->
+
+    <!-- Start: Demo Area -->
+    <section class="tj-demo-area scroll-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-demo-section wow fadeInUp" data-wow-delay=".3s">
+              <h1 class="tj-demo-section-title">↓</h1>
+              <h4 class="tj-demo-section-subtitle"></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-demo-wrapper">
+              <div class="tj-demo-top-content wow fadeInUp" data-wow-delay=".4s">
+                <h4 class="tj-demo-top-title" ><span>01. </span>CV/Resume</h4>
+                <span><img src="{% static 'kunal/img/icon/down-arrow.svg' %}" alt=""></span>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="tj-demo-thumb wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="image">
+                      <img src="{% static 'LightPort.jpeg' %}" alt="Images">
+                    </div>
+                    <h6 class="kunal-text" >CV</h6>
+                    <div class="tj-demo-button">
+                      <a class="tj-theme-btn icon_main" href="https://www.linkedin.com/posts/kaushal-chhetri-2871b8313_autodeskmaya-nuke-activity-7297854472129536000-owOc?utm_source=share&utm_medium=member_android&rcm=ACoAAE-V7ocBTuSevBwDO_J4c1WiMV1IV557O8o" target="_blank">VIew Resume
+                        <span class="icon_box">
+                          <i class="icon_first fa-regular fa-arrow-right"></i>
+                          <i class="icon_second fa-regular fa-arrow-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="tj-demo-thumb wow fadeInRight" data-wow-delay=".4s">
+                    <div class="image">
+                      <img src="{% static 'DarkPort.jpeg' %}" alt="Images">
+                    </div>
+                    <h6 class="kunal-text" >Resume</h6>
+                    <div class="tj-demo-button">
+                      <a class="tj-theme-btn icon_main" href="https://www.linkedin.com/posts/kaushal-chhetri-2871b8313_autodeskmaya-nuke-activity-7297854472129536000-owOc?utm_source=share&utm_medium=member_android&rcm=ACoAAE-V7ocBTuSevBwDO_J4c1WiMV1IV557O8o" target="_blank">View Resume
+                        <span class="icon_box">
+                          <i class="icon_first fa-regular fa-arrow-right"></i>
+                          <i class="icon_second fa-regular fa-arrow-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="works">
+            <div class="tj-demo-wrapper">
+              <div class="tj-demo-top-content wow fadeInUp" data-wow-delay=".4s">
+                <h4 class="tj-demo-top-title" ><span>02. </span>My Works</h4>
+                <span><img src="{% static 'kunal/img/icon/down-arrow.svg' %}" alt=""></span>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="tj-demo-thumb wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="image">
+                      <img src="{% static 'work1.jpeg' %}" alt="Images">
+                    </div>
+                    <h6 class="kunal-text" >Creative Project 1</h6>
+                    <div class="tj-demo-button">
+                      <a class="tj-theme-btn icon_main" target="_blank" href="https://www.behance.net/kaushalchettri" target="_blank">VIew All
+                        <span class="icon_box">
+                          <i class="icon_first fa-regular fa-arrow-right"></i>
+                          <i class="icon_second fa-regular fa-arrow-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="tj-demo-thumb wow fadeInRight" data-wow-delay=".4s">
+                    <div class="image">
+                      <img src="{% static 'work2.jpeg' %}" alt="Images">
+                    </div>
+                    <h6 class="kunal-text" >Creative Project 2</h6>
+                    <div class="tj-demo-button">
+                      <a class="tj-theme-btn icon_main" href="https://www.behance.net/kaushalchettri" target="_blank">View All
+                        <span class="icon_box">
+                          <i class="icon_first fa-regular fa-arrow-right"></i>
+                          <i class="icon_second fa-regular fa-arrow-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Demo Area -->
+
+    <!-- start: Feature Area -->
+    <section class="tj-feature-area scroll-section" id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-section-wrapper text-center wow fadeInUp" data-wow-delay=".3s">
+              <h6 class="tj-section-subtitle">BUILD WITH EASE</h6>
+              <h2 class="tj-section-title">Powerful Features</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="tj-service-wrapper tj-feature-wrapper wow fadeInUp" data-wow-delay=".2s">
+              <div class="tj-feature-icon">
+                <span><img src="{% static 'kunal/img/icon/feature-icon1.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">3D Modeling</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Expertise in creating detailed 3D models, including characters, props, and vehicles using tools like Blender and Maya. Focus on geometry, proportions, and realism.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="tj-service-wrapper tj-feature-wrapper wow fadeInUp" data-wow-delay=".4s">
+              <div class="tj-feature-icon">
+                <span><img src="{% static 'kunal/img/icon/feature-icon3.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">Texturing & Shading</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Creating highly detailed textures using Substance Painter and Photoshop, bringing models to life with realistic materials and unique stylized looks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="tj-service-wrapper tj-feature-wrapper wow fadeInUp" data-wow-delay=".5s">
+              <div class="tj-feature-icon">
+                <span><img src="{% static 'kunal/img/icon/feature-icon4.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">Rigging & Animation</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Skilled in rigging characters for animation and creating dynamic animations with an understanding of body mechanics and movement principles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="tj-service-wrapper tj-feature-wrapper wow fadeInUp" data-wow-delay=".6s">
+              <div class="tj-feature-icon">
+                <span><img src="{% static 'gameart.svg' %}" alt=""></span>
+              </div>
+              <div class="tj-service-content">
+                <h4 class="tj-service-title kunal-text">Game Art Optimization</h4>
+                <div class="tj-service-desc">
+                  <p>
+                    Working with Unity and Unreal Engine to optimize assets for real-time rendering, ensuring high-quality assets that run smoothly in games.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- end: Feature Area -->
+
+    <!-- start: Testimonial Area -->
+    <section class="tj-testimonial-section scroll-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-section-wrapper text-center wow fadeInUp" data-wow-delay=".3s">
+              <h6 class="tj-section-subtitle">My Creative</h6>
+              <h2 class="tj-section-title">SKILL SETS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-item wow fadeInUp" data-wow-delay=".3s">
+              <div class="testimonial-rating">
+                <div class="star-ratings">
+                  <div class="fill-ratings" style="width: 100%">
+                    <span>★★★★★</span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>★★★★★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <p>
+                  Expertise in Autodesk Maya for 3D modeling, animation, rigging, and texturing. Skilled in creating detailed models and animations for both games and films.
+                </p>
+              </div>
+              <div class="testimonial-auother">
+                <div class="author-images">
+                  <img src="{% static 'kunal/img/icon/test-auother.svg' %}" alt="">
+                </div>
+                <div class="auother-name">
+                  <h4 class="title">Maya (3D Modeling & Animation)</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-item wow fadeInUp" data-wow-delay=".4s">
+              <div class="testimonial-rating">
+                <div class="star-ratings">
+                  <div class="fill-ratings" style="width: 100%">
+                    <span>★★★★★</span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>★★★★★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <p>
+                  Highly skilled in Adobe Premiere Pro for video editing, color grading, and audio mixing, creating engaging video content for multiple platforms.
+                </p>
+              </div>
+              <div class="testimonial-auother">
+                <div class="author-images">
+                  <img src="{% static 'kunal/img/icon/test-auother.svg' %}" alt="">
+                </div>
+                <div class="auother-name">
+                  <h4 class="title">Adobe Premiere Pro (Video Editing)</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-item wow fadeInUp" data-wow-delay=".5s">
+              <div class="testimonial-rating">
+                <div class="star-ratings">
+                  <div class="fill-ratings" style="width: 100%">
+                    <span>★★★★★</span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>★★★★★</span>
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <p>
+                  Proficient in Adobe Animate, creating smooth 2D animations, motion graphics, and interactive content for web and app development.
+                </p>
+              </div>
+              <div class="testimonial-auother">
+                <div class="author-images">
+                  <img src="{% static 'kunal/img/icon/test-auother.svg' %}" alt="">
+                </div>
+                <div class="auother-name">
+                  <h4 class="title">Adobe Animate (2D Animation)</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- end: Testimonial Area -->
+
+
+     <!-- start: Project Area -->
+     {% comment %} <section class="tj-project-area scroll-section" id="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tj-section-wrapper">
+              <div class="sec-text wow fadeInLeft" data-wow-delay=".3s">
+                <h6 class="tj-section-subtitle">Inner pages</h6>
+                <h2 class="tj-section-title">Ready-to-Use Inner Pages</h2>
+              </div>
+              <div class="tj-project-content wow fadeInRight" data-wow-delay=".3s">
+                <h2 class="tj-project-title">12+</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tj-project-bottom">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col">
+              <div class="tj-project-slider-box">
+                <div class="tj-project-active mb-4 swiper-container">
+                  <div class="swiper-wrapper tj-project-slider-transition">
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-1.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-8.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-3.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-9.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-5.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-6.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-7.png' %}" alt="Images">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div dir="rtl" class="tj-project-active swiper-container">
+                  <div class="swiper-wrapper tj-project-slider-transition">
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-1.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-8.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-3.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-9.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-5.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-6.png' %}" alt="Images">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tj-project-thumb">
+                        <img src="{% static 'kunal/img/project/project-7.png' %}" alt="Images">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> {% endcomment %}
+    <!-- end: Project Area -->
+
+
+
+    <!-- start: Maquee Area -->
+    <section class="tj-marquee-area">
+      <div class="marquee-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="tj-marquee-slider">
+                <div class="tj-marquee-active swiper-container">
+                  <div class="swiper-wrapper tj-project-slider-transition">
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Contact</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Connect</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Enhance</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Collaborate</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Inspire</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Discover</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Create</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Let's Talk</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide tj-marquee-wrapper">
+                      <div class="tj-marquee-box">
+                        <div class="tj-marquee-icon">
+                          <span><img src="{% static 'kunal/img/icon/star.svg' %}" alt="Icon"></span>
+                        </div>
+                        <div class="tj-marquee-title">
+                          <h5 class="title">Reach Out</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- end: Maquee Area -->
+
+
+
+
+    <!-- start: Cta Area -->
+    <section class="tj-cta-section style-2" id="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="cta-wrapper style-8 text-center" data-bg-image="{% static 'kunal/img/cta/h4-cta.jpg' %}">
+              <div class="cta-content text-center">
+                <span class="subtitle wow fadeInUp" data-wow-delay=".3s">3D Rendering, Animation & More</span>
+                <h2 class="title wow fadeInUp" data-wow-delay=".4s">
+                  Ready to Bring Your Ideas to Life? Let's Create Together!
+                </h2>
+              </div>
+              <div class="cta-button wow fadeInUp mb-4" data-wow-delay=".5s">
+                <a class="tj-theme-btn icon_main" target="_blank" href="https://www.linkedin.com/posts/kaushal-chhetri-2871b8313_autodeskmaya-nuke-activity-7297854472129536000-owOc?utm_source=share&utm_medium=member_android&rcm=ACoAAE-V7ocBTuSevBwDO_J4c1WiMV1IV557O8o">Get in Touch
+                  <span class="icon_box">
+                    <i class="icon_first fa-regular fa-arrow-right"></i>
+                    <i class="icon_second fa-regular fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <a href="mailto:kaushalchettri335@gmail.com" style="margin-top: 100px;">
+                <h2 class="title wow fadeInUp kunal" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                  info@kaushal.com
+                </h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    <!-- end: Cta Area -->
+     
+  </main>
+
+  <!-- start: Footer Area -->
+  {% include 'snippet/footer.html' %}
+  <!-- end: Footer Area -->
+
+  <!-- JS here -->
+  <script src="{% static 'kunal/js/jquery.min.js' %}"></script>
+  <script src="{% static 'kunal/js/bootstrap.bundle.min.js' %}"></script>
+
+  <script src="{% static 'kunal/js/gsap.min.js' %}"></script>
+  <script src="{% static 'kunal/js/gsap-scroll-to-plugin.min.js' %}"></script>
+  <script src="{% static 'kunal/js/gsap-scroll-trigger.min.js' %}"></script>
+  <script src="{% static 'kunal/js/gsap-split-text.min.js' %}"></script>
+  <script src="{% static 'kunal/js/lenis.min.js' %}"></script>
+
+  <script src="{% static 'kunal/js/swiper.min.js' %}"></script>
+  <script src="{% static 'kunal/js/meanmenu.js' %}"></script>
+  <script src="{% static 'kunal/js/backToTop.js' %}"></script>
+  <script src="{% static 'kunal/js/wow.min.js' %}"></script>
+  <script src="{% static 'kunal/js/main.js' %}"></script>
+</body>
+
+</html>

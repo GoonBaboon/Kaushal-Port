@@ -1,0 +1,22 @@
+# Ignore compiled code
+__pycache__/
+*.py[cod]
+
+# Ignore database and environment files
+db.sqlite3
+.env
+venv/
+.venv/
+
+# Ignore Django migrations
+*/migrations/
+
+# Ignore staticfiles (but NOT your actual static assets)
+staticfiles/
+
+# Ignore uploaded media files
+media/
+
+# Ignore VS Code settings and system files
+.vscode/
+.DS_Store
